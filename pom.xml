@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>dtr.web.management.bookshop</groupId>
+	<artifactId>dtrweb-management-bookshop-2023</artifactId>
+	<version>1.0</version>
+	<packaging>war</packaging>
+	<properties>
+		<jsp.api.version>2.0</jsp.api.version>
+		<servelet.api.version>3.1.0</servelet.api.version>
+	</properties>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/jsp-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>${jsp.api.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servelet.api.version}</version>
+		</dependency>
+		<!--json library -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.14.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.14.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.14.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-digester</groupId>
+			<artifactId>commons-digester</artifactId>
+			<version>2.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>opensymphony</groupId>
+			<artifactId>sitemesh</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+	</dependencies>
+</project>
