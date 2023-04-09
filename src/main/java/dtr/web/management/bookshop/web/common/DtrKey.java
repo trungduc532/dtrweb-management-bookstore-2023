@@ -21,8 +21,8 @@ public class DtrKey {
 	public static final String BILLING_ADDRESS = "BILLING_ADDRESS";
 	
 	// database information
-	public static final String DATABASE_NAME = "BookShop";
-	public static final String DB_PASSWORD = "1234567890d";
+	public static final String DATABASE_NAME = "DTR_BOOK_SHOP";
+	public static final String DB_PASSWORD = "admin";
 	
 	// regex password key
 	public static final String PASSWORD_REGEX = "^[a-zA-Z0-9&&(@|#|/|\\]$";

@@ -18,7 +18,7 @@ public class HttpCommon {
 	}
 	
 	/**
-	 * Reader data input from json file
+	 * Get A BufferedReder from the client. Read the received data and convert to string
 	 * 
 	 * @param reader
 	 * @return
@@ -37,6 +37,13 @@ public class HttpCommon {
 		return new HttpCommon(sb.toString());
 	}
 	
+	/**
+	 * Mapping the received data from client to my model
+	 * @param <T>
+	 * @param tClass
+	 * @return
+	 * @throws Exception
+	 */
 	public <T> T toModel(Class<T> tClass) throws Exception {
 			return new ObjectMapper().readValue(inputValue, tClass);
 	}

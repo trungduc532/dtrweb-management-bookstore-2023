@@ -22,30 +22,34 @@ public class NewAPI extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		super.doPost(req, resp);
+		
+		// GET DATA FROM CLIENT NOT ERROR FONT
 		req.setCharacterEncoding("UTF-8");
+		
+		// DEFINE TYPE OF DATA RESPONSE FOR CLIENT
 		resp.setContentType("application/json");
-		try {
-			Book newBook = HttpCommon.readerInputDataFromRequest(req.getReader()).toModel(Book.class);
-			BookManagement.save(newBook, conn);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
+		// Read request from client
+		HttpCommon.readerInputDataFromRequest(req.getReader());
+		
+//		try {
+//			Book newBook = HttpCommon.readerInputDataFromRequest(req.getReader()).toModel(Book.class);
+//			BookManagement.save(newBook, conn);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 	}
 
-	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		super.doGet(req, resp);
-	}
-
-	@Override
-	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		super.doDelete(req, resp);
-	}
-
-	@Override
-	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		super.doPut(req, resp);
-	}
+//	@Override
+//	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//	}
+//
+//	@Override
+//	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//	}
+//
+//	@Override
+//	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//	}
 
 }
